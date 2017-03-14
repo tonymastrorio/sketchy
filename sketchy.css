@@ -1,0 +1,71 @@
+.square {
+	background:red;
+	width:50px;
+	height:50px;
+	float:left;
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	width:800px;
+	height:800px;
+	margin:100px auto;
+}
+
+#toprow {
+	width:800px;
+	margin:25px auto;
+	text-align:center;
+}
+
+.backgroundSquare {
+	width:50px;
+	height:50px;
+	float:left;
+	border:0;
+	margin:5px;
+	padding:0;
+}
+
+.
+
+.red {
+	background:red;
+}
+
+.orange {
+	background:orange;
+}
+
+.yellow {
+	background:yellow;
+}
+
+.green {
+	background:green;
+}
+
+.blue {
+	background:blue;
+}
+
+.purple {
+	background:purple;
+}
+
+#labels {
+	width:800px;
+	margin:auto;
+	font-size:18px;
+	margin-top:20px;
+}
+
+#left {
+	padding-left:150px;
+}
+
+#right {
+	padding-left: 225px;
+}
