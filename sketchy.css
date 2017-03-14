@@ -1,3 +1,7 @@
+#labels {
+	font-weight:bold;
+}
+
 .square {
 	background:red;
 	width:50px;
@@ -11,7 +15,7 @@
 #wrapper {
 	width:800px;
 	height:800px;
-	margin:50px auto;
+	margin:75px auto;
 }
 
 #bgcolors {
@@ -89,7 +93,6 @@
 	padding-top:20px;
 	width:800px;
 	margin:auto;
-	text-align: center;
 }
 
 #resetBtn {
@@ -104,3 +107,33 @@
 	box-shadow: 5px 5px 5px #888888;
 }
 
+#numPixels {
+	width:40px;
+	height:30px;
+	font-size: 16px;
+	text-align:center;
+	vertical-align: top;
+}
+
+#okBtn {
+	width:40px;
+	height:35px;
+	vertical-align:top;
+}
+
+#leftCol {
+	float:left;
+}
+
+#rightCol {
+	float:right;
+}
+
+#leftColText {
+	vertical-align: middle;
+	line-height:35px;
+}
+
+#leftColText span {
+	font-weight:bold;
+}

@@ -1,4 +1,4 @@
-var boxRow = prompt("How many pixels per side?");
+var boxRow = 10;
 
 var totalBoxes = boxRow * boxRow;
 var boxWidth = 800 / boxRow;
@@ -38,6 +38,36 @@ for(var i=0;i<totalBoxes;i++) {
 
 //reset to selected background color
 $("#resetBtn").on("click", function(){
-	$(".square").css("background", backgroundCol);
+	reset();
 });
 
+//fires any time there is a change in the input field
+$("#okBtn").on("click", function(){
+	reset();
+});
+
+
+//reset grid to chosen bg, mouse color and number of pixels
+function reset() {
+	$("#wrapper").empty();
+	var boxRow = $("#numPixels").val();
+	if(boxRow>25) {
+		boxRow=25;
+		$("#numPixels").val("25");
+	} else if (boxRow<1) {
+		boxRow=1;
+		$("#numPixels").val("1");
+	}
+	var totalBoxes = boxRow * boxRow;
+	var boxWidth = 800 / boxRow;
+	var boxHeight = boxWidth;
+	for(var i=0;i<totalBoxes;i++) {
+	$("#wrapper").append("<div class='square'> </div>");
+	$(".square").css("background", backgroundCol);
+	$(".square").css("width", boxWidth);
+	$(".square").css("height", boxHeight);
+	$(".square").on("mouseenter", function() {
+		$(this).css("background", mouseCol);
+	});
+}
+}
